@@ -157,7 +157,8 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
+  /* sg-body overrides the shadcn default bg/text */
+  body:not(.sg-body) {
     @apply bg-background text-foreground;
   }
 }
